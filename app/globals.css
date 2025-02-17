@@ -56,11 +56,16 @@
     --chart-5: 340 75% 55%
   }
 }
+
 @layer base {
   * {
     @apply border-border;
+    cursor: url('/normal.cur'), auto;
   }
   body {
     @apply bg-background text-foreground;
   }
 }
+
+/* globals.css */
+

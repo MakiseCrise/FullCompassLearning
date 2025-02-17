@@ -1,12 +1,20 @@
 import "./globals.css";
-import { Bangers } from 'next/font/google'
+import { Bangers, Teko } from 'next/font/google'
+import '../public/icons/iconfont.css'
  
 // If loading a variable font, you don't need to specify the font weight
-const inter = Bangers({
+const inter = Teko({
   subsets: ['latin'],
   display: 'swap',
   weight:"400"
 })
+
+const banger = Bangers({
+  subsets: ['latin'],
+  display: 'swap',
+  weight:"400"
+})
+
  
 export default function RootLayout({
   children,

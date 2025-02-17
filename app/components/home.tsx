@@ -19,8 +19,8 @@ export default function IHome() {
 
 
   return (
-    <div className="flex flex-col items-center w-screen h-auto mt-5">
-      <Avatar className="w-40 h-40">
+    <div className="flex flex-col items-center w-screen h-auto pt-3">
+      <Avatar className="w-28 h-28">
         <AvatarImage src={pic.src} />
         <AvatarFallback>Makise</AvatarFallback>
       </Avatar>
@@ -30,7 +30,7 @@ export default function IHome() {
                   initial="hidden"
                   animate="visible"
       >
-        <motion.p className="mt-5 text-5xl">
+        <motion.p className="mt-5 text-4xl">
          {
           '<Developer />'.split("").map((char,index) =>(
               <motion.span key={index} 
@@ -43,7 +43,7 @@ export default function IHome() {
         </motion.p>
         <motion.p className="opacity-65 text-slate-800">
         {
-          'Novice but Confidence'.split("").map((char,index) =>(
+          'Keep Going'.split("").map((char,index) =>(
               <motion.span key={index} 
               variants={Variants}
               >
