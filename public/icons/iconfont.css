@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1739694244187') format('truetype');
+  src: url('iconfont.ttf?t=1739866331251') format('truetype');
 }
 
 .iconfont {
@@ -9,6 +9,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-loading:before {
+  content: "\e67c";
 }
 
 .icon-github-fill:before {

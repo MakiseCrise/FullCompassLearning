@@ -1,11 +1,13 @@
+'use client'
 import { motion } from "motion/react";
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
-  const options = ["HOME", "EXP", "TEST"];
+  const options = ["HOME", "EXP"];
   const [focused, setFocused] = React.useState("");
   const [selected, setSelected] = React.useState("HOME");
-
+  const url = ["/","/exp"];
 
   return (
     <div className="relative h-screen w-10 overflow-hidden">
@@ -16,7 +18,7 @@ export default function Navbar() {
         }}
         transition={{
           duration: 0.75,
-          delay: 0.5,
+          delay: 1.5,
         }}
       ></motion.div>
 
@@ -24,9 +26,10 @@ export default function Navbar() {
       <div className="flex flex-col items-center">
         <p className="font-banger relative text-xl text-center mt-4">MKS</p>
 
-        {options.map((item) => (
+        {options.map((item,index) => (
+          
           <motion.div
-            key={item}
+          key={item}
             className="-rotate-90 mt-5 relative "
             onClick={() => setSelected(item)}
             onMouseEnter={() => setFocused(item)}
@@ -44,9 +47,12 @@ export default function Navbar() {
             <motion.p
               animate={focused === item ? {scale:1.5} : {scale:1} }
             >
+              <Link href={url[index]}>
               {item}
+              </Link>
             </motion.p>
           </motion.div>
+          
         ))}
       </div>
       {/*box2*/}

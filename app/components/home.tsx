@@ -11,7 +11,7 @@ export default function IHome() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration:1,
         staggerChildren: 0.1, 
       },
     },
@@ -19,7 +19,7 @@ export default function IHome() {
 
 
   return (
-    <div className="flex flex-col items-center w-screen h-auto pt-3">
+    <div className="flex flex-col items-center w-screen h-auto pt-3 ">
       <Avatar className="w-28 h-28">
         <AvatarImage src={pic.src} />
         <AvatarFallback>Makise</AvatarFallback>
