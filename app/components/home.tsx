@@ -2,6 +2,7 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import pic from "../../public/avatar.png";
 import { motion } from "motion/react";
+import Poker from "./poker";
 
 
 
@@ -12,7 +13,7 @@ export default function IHome() {
       opacity: 1,
       transition: {
         duration:1,
-        staggerChildren: 0.1, 
+        staggerChildren: 0.2, 
       },
     },
   };
